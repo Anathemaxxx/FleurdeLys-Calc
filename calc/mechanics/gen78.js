@@ -769,8 +769,6 @@ function calculateBPModsSMSS(gen, attacker, defender, move, field, desc, basePow
         }
     }
     if ((attacker.hasAbility('Sheer Force') && move.secondaries && !move.isMax) ||
-        (attacker.hasAbility('Sand Force') &&
-            field.hasWeather('Sand') && move.hasType('Rock', 'Ground', 'Steel')) ||
         (attacker.hasAbility('Analytic') &&
             (turnOrder !== 'first' || field.defenderSide.isSwitching)) ||
         (attacker.hasAbility('Tough Claws') && move.flags.contact) ||
@@ -779,10 +777,15 @@ function calculateBPModsSMSS(gen, attacker, defender, move, field, desc, basePow
         (attacker.hasAbility('Illusion') && attacker.abilityOn)) {
         bpMods.push(5325);
         desc.attackerAbility = attacker.ability;
+    }    
+     if (attacker.hasAbility('Sand Force') &&
+             field.hasWeather('Sand') && move.hasType('Rock', 'Ground', 'Steel')) { 
+         bpMods.push(6144);
+         desc.attackerAbility = attacker.ability;
     }
     if (INC_EM && attacker.hasAbility("Power Fists") && move.flags.punch ||
         (attacker.hasAbility('Iron Fist') && move.flags.punch)) {
-        bpMods.push(4915);
+        bpMods.push(5325);
         desc.attackerAbility = attacker.ability;
     }
     if (field.attackerSide.isBattery && move.category === 'Special') {
