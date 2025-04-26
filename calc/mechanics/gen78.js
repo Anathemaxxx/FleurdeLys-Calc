@@ -149,7 +149,7 @@ function calculateSMSS(gen, attacker, defender, move, field) {
         else if ((isNormalize = attacker.hasAbility('Normalize'))) {
             type = 'Normal';
         }
-        if (isGalvanize || isPixilate || isRefrigerate || isAerilate || isNormalize) {
+        if (isGalvanize || isPixilate || isRefrigerate || isAerilate) {
             desc.attackerAbility = attacker.ability;
             hasAteAbilityTypeChange = true;
         }
@@ -718,7 +718,7 @@ function calculateBPModsSMSS(gen, attacker, defender, move, field, desc, basePow
     if (field.attackerSide.is50Buff) {
         bpMods.push(6144)
     }
-    var terrainMultiplier = gen.num > 7 ? 5325 : 6144;
+    var terrainMultiplier = 6144;
     if ((0, util_2.isGrounded)(attacker, field)) {
         if ((field.hasTerrain('Electric') && move.hasType('Electric')) ||
             (field.hasTerrain('Grassy') && move.hasType('Grass')) ||
@@ -804,7 +804,7 @@ function calculateBPModsSMSS(gen, attacker, defender, move, field, desc, basePow
         }
     }
     if (!move.isMax && hasAteAbilityTypeChange) {
-        bpMods.push(4915);
+        bpMods.push(5325);
     }
     if ((attacker.hasAbility('Reckless') && (move.recoil || move.hasCrashDamage)) ||
         (attacker.hasAbility('Liquid Voice') && move.flags.sound) ||
