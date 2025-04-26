@@ -7528,9 +7528,6 @@ var SM_PATCH = {
 };
 var SM = (0, util_1.extend)(true, {}, XY, SM_PATCH);
 var SS_PATCH = {
-    'Aegislash-Blade': { bs: { at: 140, sa: 140 } },
-    'Aegislash-Both': { bs: { at: 140, df: 140, sa: 140, sd: 140 } },
-    'Aegislash-Shield': { bs: { df: 140, sd: 140 } },
     Articuno: { otherFormes: ['Articuno-Galar'] },
     Blastoise: { otherFormes: ['Blastoise-Gmax', 'Blastoise-Mega'] },
     Butterfree: { otherFormes: ['Butterfree-Gmax'] },
