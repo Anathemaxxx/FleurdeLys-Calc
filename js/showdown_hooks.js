@@ -1756,7 +1756,7 @@ function get_next_in() {
     var endSwap = null
     var foundMega = false
     for (var i = 0; i < ranked_trainer_poks.length; i++) {
-				if (TITLE == "Ancestral X")
+				if (TITLE == "Fleur-de-Lys")
 					break;
 
         if (foundMega) {
@@ -2354,7 +2354,7 @@ $(document).ready(function() {
    "03e577af7cc9856a1f42": "Sacred Gold/Storm Silver",
    "9e7113f0ee22dad116e1": "Platinum Redux 5.2 TC6",
    "b6e2693147e215f10f4a": "Radical Red 3.02",
-   "7a1ed35468b22ea01103": "Ancestral X",
+   "900b0ef1bec2c2ee0e0f": "Fleur-de-Lys",
    "8c3ca30ba346734d5e4f": "Run & Bun",
    "f109940e5639c3702e6d": "Rising Ruby/Sinking Saphire",
    "00734d33040067eb7e9f": "Grand Colloseum 2.0",
