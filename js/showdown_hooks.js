@@ -2355,6 +2355,7 @@ $(document).ready(function() {
    "9e7113f0ee22dad116e1": "Platinum Redux 5.2 TC6",
    "b6e2693147e215f10f4a": "Radical Red 3.02",
    "900b0ef1bec2c2ee0e0f": "Fleur-de-Lys",
+   "6b3276048bfb9f9ce183": "Fleur-de-Lys League",
    "8c3ca30ba346734d5e4f": "Run & Bun",
    "f109940e5639c3702e6d": "Rising Ruby/Sinking Saphire",
    "00734d33040067eb7e9f": "Grand Colloseum 2.0",
@@ -2905,3 +2906,4 @@ $('.set-selector, .move-selector').on("select2-close", function () {
 
 
 })
+
