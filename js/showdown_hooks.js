@@ -1756,7 +1756,7 @@ function get_next_in() {
     var endSwap = null
     var foundMega = false
     for (var i = 0; i < ranked_trainer_poks.length; i++) {
-				if (TITLE == "Fleur-de-Lys")
+				if (TITLE == "Fleur-de-Lys" || TITLE == "Fleur-de-Lys League")
 					break;
 
         if (foundMega) {
@@ -2906,4 +2906,5 @@ $('.set-selector, .move-selector').on("select2-close", function () {
 
 
 })
+
 
