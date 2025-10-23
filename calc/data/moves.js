@@ -298,7 +298,7 @@ var GSC_PATCH = {
     'Hidden Power Dragon': { bp: 70, type: 'Dragon' },
     'Hidden Power Electric': { bp: 70, type: 'Electric' },
     'Hidden Power Fighting': { bp: 70, type: 'Fighting' },
-    'Hidden Power Fire': { bp: 70, type: 'Fire' },
+    'Hidden Power Fire': { bp: 60, type: 'Fire' },
     'Hidden Power Flying': { bp: 70, type: 'Flying' },
     'Hidden Power Ghost': { bp: 70, type: 'Ghost' },
     'Hidden Power Grass': { bp: 70, type: 'Grass' },
